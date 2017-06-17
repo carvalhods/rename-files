@@ -2,7 +2,7 @@
 
 if [ -d "$1" ]; then
   regex='^(.+)( - )(.+)[\.](.+)'
-	cd "$1" 
+  cd "$1" 
   for i in *; do
   	if [ -f "$i" ]; then
   		if [[ $i =~ $regex ]]; then
